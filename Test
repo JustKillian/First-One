@@ -1,0 +1,114 @@
+// Programme pour creer l'impression d'un cube en 3D qui tourne
+
+var a = 200;
+var b = 150;
+var c = 200;
+var d = 250;
+var e = 200;
+var f = 250;
+var g = 150;
+var h = 200;
+var A = 200;
+var B = 150;
+var C = 100;
+var D = 200;
+var E = 250;
+var F = 150;
+var G = 200;
+var H = 150;
+
+draw = function() {
+
+background(255, 255, 255);
+
+if (a === 250) {
+a=200;
+}
+if (A === 150) {
+A=200;
+}
+if (b === 200) {
+b=150;
+}
+if (B === 200) {
+B=150;
+}
+if (c === 150) {
+c=200;
+}
+if (C === 150) {
+C=100;
+}
+if (d === 200) {
+d=250;
+}
+if (D === 150) {
+D=200;
+}
+if (e === 250) {
+e=200;
+}
+if (E === 200) {
+E=250;
+}
+if (f === 200) {
+f=250;
+}
+if (F === 100) {
+F=150;
+}
+if (g === 200) {
+g=150;
+}
+if (G === 250) {
+G=200;
+}
+if (h === 150) {
+h=200;
+}
+if (H === 200) {
+H=150;
+}
+
+noFill();
+quad(b,B,c,C,f,F,a,A);
+quad(b,B,a,A,e,E,g,G);
+quad(a,A,f,F,d,D,e,E);
+quad(b,B,c,C,h,H,g,G);
+quad(c,C,f,F,d,D,h,H);
+
+a++;
+A--;
+b++;
+B++;
+c--;
+C++;
+d--;
+D--;
+e++;
+E--;
+f--;
+F--;
+g++;
+G++;
+h--;
+H++;
+
+};
+
+a++;
+A--;
+b++;
+B++;
+c--;
+C++;
+d--;
+D--;
+e++;
+E--;
+f--;
+F--;
+g++;
+G++;
+h--;
+H++;
